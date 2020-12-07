@@ -11,4 +11,8 @@ describe '#report' do
   it 'input of "Green, Amber" gives an output of "Green: 1\nAmber: 1\nRed: 1"' do
     expect(report("Green, Amber, Red")).to eq "Green: 1\nAmber: 1\nRed: 1"
   end
+
+  it 'input of "Green, Green" gives an output of "Green: 2"' do
+    expect(report("Green, Green")).to eq "Green: 2"
+  end
 end
