@@ -17,5 +17,7 @@ def report(grades)
 
   output << "\nRed: #{red_counter}" if grade_arr.include?("Red")
 
-  output
+  new_output = output.delete_prefix "\n"
+
+  new_output
 end
